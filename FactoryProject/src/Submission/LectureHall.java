@@ -10,8 +10,14 @@ public class LectureHall implements ILectureHall {
 	private DeskType deskType;
 
 	
-	public void LectureHall(int RS, int RN, DeskType DT)
+	public LectureHall(int RS, int RN, DeskType DT) throws RoomSizeOutOfBoundsException
 	{
+		if(RS>200)
+			throw new RoomSizeOutOfBoundsException("Room too large");
+		else if(RS<61)
+			throw new RoomSizeOutOfBoundsException("Room too small");
+			
+		
 		roomSize = RS;
 		roomNum = RN;
 		deskType = DT;
@@ -50,7 +56,7 @@ public class LectureHall implements ILectureHall {
 	@Override
 	public int getRoomNumber() {
 		// TODO Auto-generated method stub
-		return roomNumber;
+		return roomNum;
 	}
 
 	@Override

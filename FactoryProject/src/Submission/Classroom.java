@@ -3,7 +3,7 @@ package Submission;
 import DontChange.DeskType;
 import DontChange.IClassroom;
 
-public class Classroom implements IClassroom {
+public class Classroom implements IClassroom  {
 
 	private int size;
 	private int roomNum;
