@@ -26,13 +26,13 @@ public class ComputerLab implements IComputerLab {
 	@Override
 	public boolean isComputerLab() {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
 	public String getType() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Computer Lab";
 	}
 
 	@Override

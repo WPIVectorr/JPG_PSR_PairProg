@@ -14,7 +14,7 @@ public class Classroom implements IClassroom {
 	@Override
 	public boolean isClassroom() {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
@@ -32,7 +32,7 @@ public class Classroom implements IClassroom {
 	@Override
 	public String getType() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Classroom";
 	}
 
 	@Override
