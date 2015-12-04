@@ -13,9 +13,9 @@ public class LectureHall implements ILectureHall {
 	public LectureHall(int RN, int RS, DeskType DT) throws RoomSizeOutOfBoundsException
 	{
 		if(RS>200)
-			throw new RoomSizeOutOfBoundsException("Room too large");
+			throw new RoomSizeOutOfBoundsException("LectureHall too large "+RN);
 		else if(RS<61)
-			throw new RoomSizeOutOfBoundsException("Room too small");
+			throw new RoomSizeOutOfBoundsException("LectureHall too small "+RN);
 			
 		
 		size = RS;

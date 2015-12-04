@@ -11,7 +11,7 @@ public class RoomFactory {
 		
 	}
 	//creates rooms without computers
-	public IRoom createRoom(int RS, int RN, DeskType DT)
+	public IRoom createRoom(int RN, int RS, DeskType DT)
 	{
 		
 			try {

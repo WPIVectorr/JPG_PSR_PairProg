@@ -12,9 +12,9 @@ public class Classroom implements IClassroom  {
 	public Classroom(int RN, int RS,DeskType DT) throws RoomSizeOutOfBoundsException
 	{
 		if(RS>60)
-			throw new RoomSizeOutOfBoundsException("Room too large");
+			throw new RoomSizeOutOfBoundsException("Classroom too large");
 		else if(RS<15)
-			throw new RoomSizeOutOfBoundsException("Room too small");
+			throw new RoomSizeOutOfBoundsException("Classroom too small");
 		
 		size = RS;
 		roomNum = RN;
