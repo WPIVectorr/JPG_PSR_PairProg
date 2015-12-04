@@ -5,6 +5,10 @@ import DontChange.IClassroom;
 
 public class Classroom implements IClassroom {
 
+	private int size;
+	private int roomNum;
+	private DeskType deskType;
+	
 	@Override
 	public int roomSize() {
 		// TODO Auto-generated method stub
@@ -14,7 +18,7 @@ public class Classroom implements IClassroom {
 	@Override
 	public boolean isClassroom() {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
@@ -32,25 +36,25 @@ public class Classroom implements IClassroom {
 	@Override
 	public String getType() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Classroom";
 	}
 
 	@Override
 	public int getRoomNumber() {
 		// TODO Auto-generated method stub
-		return 0;
+		return roomNum;
 	}
 
 	@Override
 	public DeskType getDeskType() {
 		// TODO Auto-generated method stub
-		return null;
+		return deskType;
 	}
 
 	@Override
 	public void setDeskType(DeskType t) {
 		// TODO Auto-generated method stub
-
+		deskType = t;
 	}
 
 }

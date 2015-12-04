@@ -5,10 +5,22 @@ import DontChange.ILectureHall;
 
 public class LectureHall implements ILectureHall {
 
+	private int roomSize;
+	private int roomNum;
+	private DeskType deskType;
+
+	
+	public void LectureHall(int RS, int RN, DeskType DT)
+	{
+		roomSize = RS;
+		roomNum = RN;
+		deskType = DT;
+	}
+	
 	@Override
 	public int roomSize() {
 		// TODO Auto-generated method stub
-		return 0;
+		return roomSize;
 	}
 
 	@Override
@@ -20,7 +32,7 @@ public class LectureHall implements ILectureHall {
 	@Override
 	public boolean isLectureHall() {
 		// TODO Auto-generated method stub
-		return false;
+		return true;
 	}
 
 	@Override
@@ -32,25 +44,25 @@ public class LectureHall implements ILectureHall {
 	@Override
 	public String getType() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Lecture Hall";
 	}
 
 	@Override
 	public int getRoomNumber() {
 		// TODO Auto-generated method stub
-		return 0;
+		return roomNumber;
 	}
 
 	@Override
 	public DeskType getDeskType() {
 		// TODO Auto-generated method stub
-		return null;
+		return deskType;
 	}
 
 	@Override
 	public void setDeskType(DeskType t) {
 		// TODO Auto-generated method stub
-
+		deskType = t;
 	}
 
 }
