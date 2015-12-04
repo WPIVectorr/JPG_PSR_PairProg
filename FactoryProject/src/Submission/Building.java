@@ -44,13 +44,25 @@ public class Building implements IBuilding{
 	@Override
 	public Collection<ILectureHall> getLectureHalls() {
 		// TODO Auto-generated method stub
-		return null;
+		Collection<ILectureHall> lectureHall = new ArrayList<ILectureHall>();
+		for(IRoom room : rooms){
+			if(room.isClassroom()){
+				lectureHall.add((ILectureHall)room);
+			}
+		}
+		return lectureHall;
 	}
 
 	@Override
 	public Collection<IComputerLab> getComputerLabs() {
 		// TODO Auto-generated method stub
-		return null;
+		Collection<IComputerLab> compLabs = new ArrayList<IComputerLab>();
+		for(IRoom room : rooms){
+			if(room.isClassroom()){
+				compLabs.add((IComputerLab)room);
+			}
+		}
+		return compLabs;
 	}
 
 }
