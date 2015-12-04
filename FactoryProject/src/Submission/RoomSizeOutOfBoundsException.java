@@ -7,3 +7,4 @@ public class RoomSizeOutOfBoundsException extends Exception {
 	  public RoomSizeOutOfBoundsException(String message, Throwable cause) { super(message, cause); }
 	  public RoomSizeOutOfBoundsException(Throwable cause) { super(cause); }
 	}
+

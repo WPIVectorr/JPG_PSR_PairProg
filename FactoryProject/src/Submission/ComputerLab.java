@@ -5,10 +5,17 @@ import DontChange.IComputerLab;
 
 public class ComputerLab implements IComputerLab {
 
-	int roomNum;
-	int size;
+	private int roomNum;
+	private int size;
 	
 	ComputerType compType;
+	
+	public ComputerLab(int roomNum, int roomSize, ComputerType compType){
+		this.roomNum = roomNum;
+		this.size = roomSize;
+		this.compType = compType;
+	}
+	
 	@Override
 	public int roomSize() {
 		// TODO Auto-generated method stub

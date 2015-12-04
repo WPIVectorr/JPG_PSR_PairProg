@@ -9,6 +9,13 @@ public class Classroom implements IClassroom  {
 	private int roomNum;
 	private DeskType deskType;
 	
+	public void Classroom(int RS, int RN, DeskType DT)
+	{
+		size = RS;
+		roomNum = RN;
+		deskType = DT;
+	}
+	
 	@Override
 	public int roomSize() {
 		// TODO Auto-generated method stub

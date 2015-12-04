@@ -5,7 +5,7 @@ import DontChange.ILectureHall;
 
 public class LectureHall implements ILectureHall {
 
-	private int roomSize;
+	private int size;
 	private int roomNum;
 	private DeskType deskType;
 
@@ -18,7 +18,7 @@ public class LectureHall implements ILectureHall {
 			throw new RoomSizeOutOfBoundsException("Room too small");
 			
 		
-		roomSize = RS;
+		size = RS;
 		roomNum = RN;
 		deskType = DT;
 	}
@@ -26,7 +26,7 @@ public class LectureHall implements ILectureHall {
 	@Override
 	public int roomSize() {
 		// TODO Auto-generated method stub
-		return roomSize;
+		return size;
 	}
 
 	@Override
