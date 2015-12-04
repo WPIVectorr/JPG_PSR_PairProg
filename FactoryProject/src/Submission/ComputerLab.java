@@ -12,9 +12,9 @@ public class ComputerLab implements IComputerLab {
 	
 	public ComputerLab(int RN, int RS, ComputerType compType)throws RoomSizeOutOfBoundsException
 	{
-		if(RS>200)
+		if(RS>40)
 			throw new RoomSizeOutOfBoundsException("Room too large");
-		else if(RS<61)
+		else if(RS<25)
 			throw new RoomSizeOutOfBoundsException("Room too small");
 		
 		this.roomNum = RN;

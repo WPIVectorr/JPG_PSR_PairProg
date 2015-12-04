@@ -10,7 +10,7 @@ public class LectureHall implements ILectureHall {
 	private DeskType deskType;
 
 	
-	public LectureHall(int RS, int RN, DeskType DT) throws RoomSizeOutOfBoundsException
+	public LectureHall(int RN, int RS, DeskType DT) throws RoomSizeOutOfBoundsException
 	{
 		if(RS>200)
 			throw new RoomSizeOutOfBoundsException("Room too large");

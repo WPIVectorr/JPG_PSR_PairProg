@@ -9,11 +9,11 @@ public class Classroom implements IClassroom  {
 	private int roomNum;
 	private DeskType deskType;
 	
-	public void Classroom(int RS, int RN, DeskType DT) throws RoomSizeOutOfBoundsException
+	public Classroom(int RN, int RS,DeskType DT) throws RoomSizeOutOfBoundsException
 	{
-		if(RS>200)
+		if(RS>60)
 			throw new RoomSizeOutOfBoundsException("Room too large");
-		else if(RS<61)
+		else if(RS<15)
 			throw new RoomSizeOutOfBoundsException("Room too small");
 		
 		size = RS;
