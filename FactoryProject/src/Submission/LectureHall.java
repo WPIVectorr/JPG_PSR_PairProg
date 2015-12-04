@@ -5,14 +5,14 @@ import DontChange.ILectureHall;
 
 public class LectureHall implements ILectureHall {
 
-	private int roomSize;
+	private int size;
 	private int roomNum;
 	private DeskType deskType;
 
 	
 	public void LectureHall(int RS, int RN, DeskType DT)
 	{
-		roomSize = RS;
+		size = RS;
 		roomNum = RN;
 		deskType = DT;
 	}
@@ -20,7 +20,7 @@ public class LectureHall implements ILectureHall {
 	@Override
 	public int roomSize() {
 		// TODO Auto-generated method stub
-		return roomSize;
+		return size;
 	}
 
 	@Override
@@ -50,7 +50,7 @@ public class LectureHall implements ILectureHall {
 	@Override
 	public int getRoomNumber() {
 		// TODO Auto-generated method stub
-		return roomNumber;
+		return roomNum;
 	}
 
 	@Override

@@ -1,5 +1,6 @@
 package Submission;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 import DontChange.IBuilding;
@@ -9,23 +10,35 @@ import DontChange.ILectureHall;
 import DontChange.IRoom;
 
 public class Building implements IBuilding{
+	
+	Collection<IRoom> rooms = new ArrayList<IRoom>();
+	
+	public Building(){
+		
+	}
 
 	@Override
 	public Collection<IRoom> getRooms() {
 		// TODO Auto-generated method stub
-		return null;
+		return rooms;
 	}
 
 	@Override
 	public void addRoom(IRoom newRoom) {
 		// TODO Auto-generated method stub
-		
+		rooms.add(newRoom);
 	}
 
 	@Override
 	public Collection<IClassroom> getClassrooms() {
 		// TODO Auto-generated method stub
-		return null;
+		Collection<IClassroom> classrooms = new ArrayList<IClassroom>();
+		for(IRoom room : rooms){
+			if(room.isClassroom()){
+				classrooms.add((IClassroom)room);
+			}
+		}
+		return classrooms;
 	}
 
 	@Override
