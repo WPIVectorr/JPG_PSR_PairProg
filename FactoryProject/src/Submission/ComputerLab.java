@@ -5,10 +5,14 @@ import DontChange.IComputerLab;
 
 public class ComputerLab implements IComputerLab {
 
+	int roomNum;
+	int size;
+	
+	ComputerType compType;
 	@Override
 	public int roomSize() {
 		// TODO Auto-generated method stub
-		return 0;
+		return size;
 	}
 
 	@Override
@@ -38,13 +42,13 @@ public class ComputerLab implements IComputerLab {
 	@Override
 	public int getRoomNumber() {
 		// TODO Auto-generated method stub
-		return 0;
+		return roomNum;
 	}
 
 	@Override
 	public ComputerType getComputerType() {
 		// TODO Auto-generated method stub
-		return null;
+		return compType;
 	}
 
 	@Override
