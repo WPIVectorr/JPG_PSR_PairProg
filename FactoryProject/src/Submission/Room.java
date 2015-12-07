@@ -19,7 +19,7 @@ public class Room implements IRoom {
 	 * @param roomNum
 	 * @param deskType
 	 */
-	public Room(int size, int roomNum, DeskType deskType) {
+	public Room(int roomNum, int size, DeskType deskType) {
 		
 		this.size = size;
 		this.roomNum = roomNum;
