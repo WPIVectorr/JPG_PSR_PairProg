@@ -15,10 +15,12 @@ public class RoomFactory {
 	{
 		
 			try {
-				if(RS<61)
+				if(RS<61 && DT == DeskType.SWINGOUT)
 					return new Classroom(RN,RS,DT);
-				else
+				else if(RS>60 && DT == DeskType.LONGTABLES)
 					return new LectureHall(RN,RS,DT);
+				else 
+					return new Room(RN,RS,DT);
 			} catch (RoomSizeOutOfBoundsException e) {
 				// TODO Auto-generated catch block
 				System.out.println(e);
